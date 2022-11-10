@@ -13,10 +13,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+      .bg-image {
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.8) url(/assets/img/gla.jpeg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        /* opacity: 0.8; */
+        /* filter: brightness(75%) saturate(140%); */
+        background-blend-mode: darken;
+        width: 100% !important;
+      }
       footer {
         position: absolute;
         width: 100%;
         bottom: 0;
+      }
+      .contact-info {
+        color: #fff !important;
       }
     </style>
 </head>
@@ -50,7 +63,7 @@
                 <a class="nav-link" href="committee.html">Committee</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="speaker.html">Keynote Speakers</a>
+                <a class="nav-link" href="speaker.html">Speakers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="imp-dates.html">Important Dates</a>
@@ -84,26 +97,39 @@
         </div>
       </nav>
 
-    <!-- Important Dates  -->
-    <div class="container table-responsive" style="padding: 100px 0 50px;">
-      <div class = "text-center">
-          <h1 class = "heading" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">Contact Us</h1>
-          <hr class = "heading-hr" style= "width: 10%; margin: auto;">
+    <!-- Contact Us -->
+    <div class="container-fluid bg-image">
+      <div class = "text-center" style="padding: 100px 0 50px;">
+          <h1 class = "heading" style="color: #fff;">Contact Us</h1>
+          <hr class = "heading-hr" style= "width: 10%; margin: auto; background-color: #fff;">
       </div>
-        <div class="contact-info py-5 text-success">
-          <div class="clg-address text-center">
-              <h1 style="font-size:20px; font-weight: 600;" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">GLA UNIVERSITY,<br>
-                  17km Stone, NH-2, Mathura-Delhi Road P.O. Chaumuhan,<br>
-                  Mathura-281 406 (U.P.) INDIA
+      <div class="contact-info py-5 text-success">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 px-4">
+            <div class="clg-address text-center">
+              <h1 class="py-2" style="font-size:30px; font-weight: 600;" data-aos = "fade-down" data-aos-delay="500" data-aos-duration="500">GLA UNIVERSITY,</h1>
+              <h1 class="py-1" style="font-size:25px; font-weight: 600;" data-aos = "fade-down" data-aos-delay="500" data-aos-duration="500">17km Stone, NH-2, Mathura-Delhi Road P.O. Chaumuhan,</h1>
+                <h1 class="pt-1" style="font-size:25px; font-weight: 600;" data-aos = "fade-down" data-aos-delay="500" data-aos-duration="500">Mathura-281 406 (U.P.) INDIA</h1>
               </h1><br>
-                  <p class="email btn btn-success" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">Email- <a href="mailto:iscon2023@gla.ac.in" style="color: #fff;">iscon2023@gla.ac.in &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                  <p class="email btn btn-success pt-0" data-aos = "fade-down" data-aos-delay="500" data-aos-duration="500">Email- <a href="mailto:iscon2023@gla.ac.in" style="color: #fff;">iscon2023@gla.ac.in &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i></a></p>
           </div>
-          <div class="name text-center pt-4">
-              <h1 style="font-size: 22px; font-weight: 500;" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">Dr. Ashish Sharma</h1>
-              <a class="btn btn-success" href="tel:+919760079135" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">+91 9760079135 &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex" data-aos = "fade-up" data-aos-delay="500" data-aos-duration="500">
+            <div class="name text-center pt-5 px-5">
+              <img src="/assets/img//committee/Ashish-Sharma-02.jpg" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 10px;" alt="">
+              <h1 style="font-size: 25px; font-weight: 500;">Dr. Ashish Sharma</h1>
+              <a class="btn btn-success" href="tel:+919760079135">+91 9760079135 &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>
               </a>
+            </div>
+            <div class="name text-center pt-5">
+              <img src="/assets/img//committee/Mayank-shrivatav.jpg" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 10px;" alt="">
+              <h1 style="font-size: 25px; font-weight: 500;">Dr. Mayank Shrivastava</h1>
+              <a class="btn btn-success" href="tel:+918979132666">+91 8979132666 &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-        </div>      
+        </div>         
+      </div>      
     </div>
 
     <!-- Footer -->
